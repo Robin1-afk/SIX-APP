@@ -1,0 +1,23 @@
+
+<div class="container">
+    <nav class="navbar">
+        <button class="btn btn-secondary" (click)="buscar()">Buscar</button>
+    </nav>
+    <br>
+    <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+    
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of listaUser">
+    
+            <td>{{ item.usuID }}</td>
+            <td>{{ item.nombre +' '+ item.apellido }}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
